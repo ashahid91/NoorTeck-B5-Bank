@@ -8,58 +8,57 @@ import com.noorteck.qa.utils.CommonUI;
 
 public class LoanPage extends CommonUI {
 
-	@FindBy(xpath = "/html[1]/body[1]/app-root[1]/mat-sidenav-container[1]/mat-sidenav-content[1]/main[1]/app-loans[1]/div[1]/div[2]/mat-horizontal-stepper[1]/div[2]/div[1]/form[1]/mat-form-field[1]/div[1]/div[1]/div[1]/input[1]")
+	@FindBy(xpath = "//input[@id='mat-input-0']")
 	WebElement nameField;
 
-	@FindBy(xpath = "/html[1]/body[1]/app-root[1]/mat-sidenav-container[1]/mat-sidenav-content[1]/main[1]/app-loans[1]/div[1]/div[2]/mat-horizontal-stepper[1]/div[2]/div[1]/form[1]/mat-form-field[2]/div[1]/div[1]/div[1]/input[1]")
+	@FindBy(xpath = "//input[@id='mat-input-1']")
 	WebElement addressField;
 
-	@FindBy(xpath = "/html[1]/body[1]/app-root[1]/mat-sidenav-container[1]/mat-sidenav-content[1]/main[1]/app-loans[1]/div[1]/div[2]/mat-horizontal-stepper[1]/div[2]/div[1]/form[1]/mat-form-field[3]/div[1]/div[1]/div[1]")
+	@FindBy(xpath ="//span[@class='mat-select-placeholder ng-tns-c13-5 ng-star-inserted']")
 	WebElement loanType;
-	
-	@FindBy(xpath = "/html[1]/body[1]/div[4]/div[2]/div[1]/div[1]/div[1]/mat-option[2]/span[1]")
+	@FindBy(xpath = "//span[normalize-space()='Personal']")
 	WebElement loanTypePersonal;
 	
-	@FindBy (xpath="/html[1]/body[1]/div[4]/div[2]/div[1]/div[1]/div[1]/mat-option[3]/span[1]")
+	@FindBy (xpath="//span[normalize-space()='Investing']")
 	WebElement loanTypenInvesting;
 	
-	@FindBy (xpath="/html[1]/body[1]/div[4]/div[2]/div[1]/div[1]/div[1]/mat-option[4]/span[1]")
+	@FindBy (xpath="//span[normalize-space()='Retirement']")
 	WebElement loanTypeRetirement;
 	
-	@FindBy (xpath="/html[1]/body[1]/div[4]/div[2]/div[1]/div[1]/div[1]/mat-option[5]/span[1]")
+	@FindBy (xpath="//span[normalize-space()='Rainy Day']")
 	WebElement loanTypeRainyDay;
 
-	@FindBy(xpath = "/html[1]/body[1]/app-root[1]/mat-sidenav-container[1]/mat-sidenav-content[1]/main[1]/app-loans[1]/div[1]/div[2]/mat-horizontal-stepper[1]/div[2]/div[1]/form[1]/mat-form-field[4]/div[1]/div[1]/div[1]/input[1]")
+	@FindBy(xpath = "//input[@id='mat-input-2']")
 	WebElement yearsToRepayField;
 
 	@FindBy(xpath = "/html[1]/body[1]/app-root[1]/mat-sidenav-container[1]/mat-sidenav-content[1]/main[1]/app-loans[1]/div[1]/div[2]/mat-horizontal-stepper[1]/div[2]/div[1]/form[1]/div[1]/button[1]/span[1]")
 	WebElement nextButton;
 
-	@FindBy(xpath = "/html[1]/body[1]/app-root[1]/mat-sidenav-container[1]/mat-sidenav-content[1]/main[1]/app-loans[1]/div[1]/div[2]/mat-horizontal-stepper[1]/div[2]/div[2]/form[1]/mat-form-field[1]/div[1]/div[1]/div[1]/input[1]")
+	@FindBy(xpath = "//input[@id='mat-input-3']")
 	WebElement amountField;
 
-	@FindBy(xpath = "/html[1]/body[1]/app-root[1]/mat-sidenav-container[1]/mat-sidenav-content[1]/main[1]/app-loans[1]/div[1]/div[2]/mat-horizontal-stepper[1]/div[2]/div[2]/form[1]/mat-form-field[2]/div[1]/div[1]/div[1]/input[1]")
+	@FindBy(xpath = "//input[@id='mat-input-4']")
 	WebElement mothersMaidenNameField;
 
-	@FindBy(xpath = "/html[1]/body[1]/app-root[1]/mat-sidenav-container[1]/mat-sidenav-content[1]/main[1]/app-loans[1]/div[1]/div[2]/mat-horizontal-stepper[1]/div[2]/div[2]/form[1]/mat-form-field[3]/div[1]/div[1]/div[1]/input[1]")
+	@FindBy(xpath = "//input[@id='mat-input-5']")
 	WebElement socialSecurityNumberField;
 
 	@FindBy(xpath = "/html[1]/body[1]/app-root[1]/mat-sidenav-container[1]/mat-sidenav-content[1]/main[1]/app-loans[1]/div[1]/div[2]/mat-horizontal-stepper[1]/div[2]/div[2]/form[1]/div[1]/button[2]/span[1]")
 	WebElement next2Button;
 
-	@FindBy(xpath = "/html[1]/body[1]/app-root[1]/mat-sidenav-container[1]/mat-sidenav-content[1]/main[1]/app-loans[1]/div[1]/div[2]/mat-horizontal-stepper[1]/div[2]/div[2]/form[1]/div[1]/button[1]/span[1]")
+	@FindBy(xpath = "//button[@class='mat-button cdk-focused cdk-mouse-focused']")
 	WebElement backButton;
 
-	@FindBy(xpath = "/html[1]/body[1]/app-root[1]/mat-sidenav-container[1]/mat-sidenav-content[1]/main[1]/app-loans[1]/div[1]/div[2]/mat-horizontal-stepper[1]/div[2]/div[3]/div[1]/button[1]")
+	@FindBy(xpath = "/html[1]/body[1]/app-root[1]/mat-sidenav-container[1]/mat-sidenav-content[1]/main[1]/app-loans[1]/div[1]/div[2]/mat-horizontal-stepper[1]/div[2]/div[3]/div[1]/button[1]/span[1]")
 	WebElement confirmButton;
 
-	@FindBy(xpath = "/html[1]/body[1]/app-root[1]/mat-sidenav-container[1]/mat-sidenav-content[1]/main[1]/app-loans[1]/div[1]/div[2]/mat-horizontal-stepper[1]/div[2]/div[3]/div[1]/button[2]/span[1]")
+	@FindBy(css = "button[class='mat-button cdk-focused cdk-mouse-focused']")
 	WebElement back2Button;
 
-	@FindBy(xpath = "/html[1]/body[1]/app-root[1]/mat-sidenav-container[1]/mat-sidenav-content[1]/main[1]/app-loans[1]/div[1]/div[2]/mat-horizontal-stepper[1]/div[2]/div[3]/div[1]/button[3]/span[1]")
+	@FindBy(xpath = "//span[normalize-space()='Reset']")
 	WebElement resetButton;
 
-	@FindBy(xpath = "/html[1]/body[1]/app-root[1]/mat-sidenav-container[1]/mat-sidenav-content[1]/main[1]/app-loan-success[1]/div[1]/div[1]/div[1]/div[1]/mat-card[1]/mat-card-title[1]")
+	@FindBy(xpath = "//mat-card-title[@class='mat-card-title']")
 	WebElement loanMessage;
 
 	public LoanPage() {

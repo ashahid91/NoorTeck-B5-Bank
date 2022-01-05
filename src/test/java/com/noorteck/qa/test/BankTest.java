@@ -15,11 +15,11 @@ public class BankTest extends ObjInitialize {
 
 	public static void main(String[] args) {
 		String url = "https://usdemo.vee24.com/#/transactions";
-		CommonUI.openBrowser("chrome");
-		CommonUI.navigate(url);
+//		CommonUI.openBrowser("chrome");
+//		CommonUI.navigate(url);
 		BankTest test = new BankTest();
-		test.testCaseOne();
-		CommonUI.quitBrowser();
+//		test.testCaseOne();
+//		CommonUI.quitBrowser();
 		CommonUI.openBrowser("chrome");
 		CommonUI.navigate(url);
 		test.testCaseTwo();
